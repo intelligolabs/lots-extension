@@ -1,4 +1,4 @@
-# LOTS of Fashion! Multi-Conditioning for Image Generation via Sketch-Text Pairing #
+# Multi-Level Conditioning by Pairing Localized Text and Sketch for Fashion Image Generation #
 
 [![Project Page](https://img.shields.io/badge/Project_Page-121013?style=flat&logo=github&logoColor=white)](https://intelligolabs.github.io/lots)
 [![Model on HF](https://huggingface.co/datasets/huggingface/badges/resolve/main/model-on-hf-sm-dark.svg)](https://huggingface.co/federicogirella/lots)
@@ -6,7 +6,7 @@
 
 ![LOTS](static/LOTS.png)
 
-This is the official implementation of the **LOTS** adapter from the paper *"LOTS of Fashion! Multi-Conditioning for Image Generation via Sketch-Text Pairing"*, published as **Oral at ICCV25** in Honolulu.
+This is the official implementation of the **LOTS** adapter from the paper *"Multi-Level Conditioning by Pairing Localized Text and Sketch for Fashion Image Generation"*. The paper is currently under review.
 
 To access the **Sketchy** dataset, refer to [the HuggingFace repository](https://huggingface.co/datasets/federicogirella/sketchy)
 
@@ -55,10 +55,11 @@ This script generates an image for each item in the test split of Sketchy, and s
 ## Citation
 If you find our work useful, please cite our work:
 ```
-@inproceedings{girella2025lots,
-  author    = {Girella, Federico and Talon, Davide and Lie, Ziyue and Ruan, Zanxi and Wang, Yiming and Cristani, Marco},
-  title     = {LOTS of Fashion! Multi-Conditioning for Image Generation via Sketch-Text Pairing},
-  journal   = {Proceedings of the International Conference on Computer Vision},
-  year      = {2025},
+@article{liu2026multi,
+  title={Multi-Level Conditioning by Pairing Localized Text and Sketch for Fashion Image Generation},
+  author={Liu, Ziyue and Talon, Davide and Girella, Federico and Ruan, Zanxi and Mondo, Mattia and Bazzani, Loris and Wang, Yiming and Cristani, Marco},
+  journal={arXiv preprint arXiv:2602.18309},
+  year={2026}
+}
 }
 ```
