@@ -4,8 +4,6 @@
 [![Model on HF](https://huggingface.co/datasets/huggingface/badges/resolve/main/model-on-hf-sm-dark.svg)](https://huggingface.co/federicogirella/lots)
 [![Dataset on HF](https://huggingface.co/datasets/huggingface/badges/resolve/main/dataset-on-hf-sm-dark.svg)](https://huggingface.co/datasets/federicogirella/sketchy)
 
-![LOTS](static/LOTS.png)
-
 This is the official implementation of the **LOTS** adapter from the paper *"Multi-Level Conditioning by Pairing Localized Text and Sketch for Fashion Image Generation"*. The paper is currently under review.
 
 To access the **Sketchy** dataset, refer to [the HuggingFace repository](https://huggingface.co/datasets/federicogirella/sketchy)
