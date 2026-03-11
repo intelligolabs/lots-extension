@@ -1,11 +1,9 @@
-RUN_NAME="test_run"
+#!/bin/bash
+export RUN_NAME="inference"
 
 python scripts/lots/inference_lots.py \
     --base_model_path="stabilityai/stable-diffusion-xl-base-1.0" \
-    --device="cuda" \
-    --seed=21 \
-    --dinov2_model="vits14" \
-    --ckpt_path="ckpts/lots/lots.bin" \
     --dataset_root="data/sketchy" \
     --out_dir="outputs/inference/$RUN_NAME" \
-    --resolution=512
+    --seed=3407 \
+    --ckpt_path="ckpts/lots/lots.bin"
