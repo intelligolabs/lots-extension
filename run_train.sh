@@ -1,6 +1,7 @@
-RUN_NAME="test_run"
+#!/bin/bash
+export RUN_NAME="train"
 
-accelerate launch --mixed_precision "bf16" --num_processes 4 --multi-gpu --gpu_ids='all'\
+accelerate launch --mixed_precision "bf16" --num_processes 4 --multi-gpu \
     scripts/lots/train_lots.py \
     --pretrained_model_name_or_path="stabilityai/stable-diffusion-xl-base-1.0" \
     --dataset_root="data/sketchy" \
@@ -9,9 +10,10 @@ accelerate launch --mixed_precision "bf16" --num_processes 4 --multi-gpu --gpu_i
     --learning_rate=1e-5 \
     --num_train_epochs=80 \
     --dataloader_num_workers=8 \
-    --save_steps=10000 \
-    --train_batch_size=8 \
+    --save_steps=5000 \
+    --train_batch_size=4 \
     --dinov2_model="vits14" \
-    --num_cls_tokens=32 \
+    --num_cls_tokens=64 \
     --fusion_strategy="deferred" \
-    --gradient_accumulation_steps=8
+    --seed=3407 \
+    --gradient_accumulation_steps=16
